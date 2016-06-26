@@ -24,5 +24,7 @@ var searchData=
   ['layout_5fsize_5fpreferred',['LAYOUT_SIZE_PREFERRED',['../namespacetb.html#a1e55824cef7442059158c49282d4a3aba87e234eda889d37fa312c16f77b8079b',1,'tb']]],
   ['layoutparams',['LayoutParams',['../classtb_1_1_layout_params.html',1,'tb']]],
   ['load',['Load',['../classtb_1_1_t_b_language.html#a3ceaa1880016ea3997556ed85558c7de',1,'tb::TBLanguage::Load()'],['../classtb_1_1_t_b_skin.html#a56ed012d0f118afa47879edc62e329a9',1,'tb::TBSkin::Load()']]],
-  ['lock_5fscrollbars_5fcounter',['lock_scrollbars_counter',['../classtb_1_1_t_b_style_edit.html#a05f875224a0f5a65fa0a0bd601061ad3',1,'tb::TBStyleEdit']]]
+  ['lock_5fscrollbars_5fcounter',['lock_scrollbars_counter',['../classtb_1_1_t_b_style_edit.html#a05f875224a0f5a65fa0a0bd601061ad3',1,'tb::TBStyleEdit']]],
+  ['layout',['Layout',['../page_layout.html',1,'']]],
+  ['license',['License',['../page_license.html',1,'']]]
 ];

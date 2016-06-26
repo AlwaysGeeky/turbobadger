@@ -2,7 +2,7 @@ var NAVTREE =
 [
   [ "Turbo Badger", "index.html", [
     [ "Introduction", "index.html", null ],
-    [ "License", "_license.html", null ],
+    [ "License", "page_license.html", null ],
     [ "Getting Started", "page_gettingstarted.html", [
       [ "Configuration Options", "page_gettingstarted.html#sec_confopt", null ],
       [ "Events", "page_gettingstarted.html#sec_events", [
@@ -18,11 +18,11 @@ var NAVTREE =
       [ "Widgets", "page_gettingstarted.html#sec_widgets", null ],
       [ "Serialization", "page_gettingstarted.html#sec_serialization", null ]
     ] ],
-    [ "Widgets", "_widgets.html", [
-      [ "List of common widgets", "_widgets.html#sec_commonwidg", null ],
-      [ "Creating custom widgets", "_widgets.html#sec_customwidg", null ]
+    [ "Widgets", "page_widgets.html", [
+      [ "List of common widgets", "page_widgets.html#sec_commonwidg", null ],
+      [ "Creating custom widgets", "page_widgets.html#sec_customwidg", null ]
     ] ],
-    [ "Layout", "_layout.html", null ],
+    [ "Layout", "page_layout.html", null ],
     [ "Serialization (the .tb.txt format)", "page_resources.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -55,15 +55,15 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_layout.html",
-"classtb_1_1_t_b_click_label.html#ab5e8bed13abc83d913cff4d6d653ffd0",
-"classtb_1_1_t_b_hash_table_of.html#a1fe8ba597bfe0bd18f6a4fbbb0d9d027",
-"classtb_1_1_t_b_node.html#a5b0ad2102f714a25984ac272dfb4ec3e",
-"classtb_1_1_t_b_scroller.html#a2f0eb39f59228ca032cf1e55dbf1512b",
-"classtb_1_1_t_b_skin_element.html#ab101c4b9ff1dbdaca873aef9c474960f",
-"classtb_1_1_t_b_text_field.html#af28487b63b2094afa4f8110e70c2a968",
-"classtb_1_1_t_b_widget.html#a482d5d33dc7427616c2dd3ab9cf65374",
-"classtb_1_1_t_b_window.html#a08d26cca75f803a1b3bf04b3ad28d5ee"
+"annotated.html",
+"classtb_1_1_t_b_clipboard.html",
+"classtb_1_1_t_b_i_d.html#a8f6519e97439df44387189e11dff4df8",
+"classtb_1_1_t_b_node.html#a780d1f5acfe043112f903d4fb9adc198",
+"classtb_1_1_t_b_scroller.html#ac36020188d96b452b54861c56ab8f11c",
+"classtb_1_1_t_b_skin_element.html#ac1de8f5bdf8c34c14064ee18113af553",
+"classtb_1_1_t_b_text_fragment.html#a1156139c083dcac1bc8acd8145f5f200",
+"classtb_1_1_t_b_widget.html#a4f78765be6913fec55d1769d5916f633",
+"classtb_1_1_t_b_window.html#a39e1cc6fd2f09423f26e4c5d1b22211e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
