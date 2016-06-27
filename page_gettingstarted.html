@@ -107,8 +107,8 @@ Configuration Options</h1>
 Events</h1>
 <h2><a class="anchor" id="subsec_input"></a>
 Input</h2>
-<p>You need to create at least one "root widget" for your UI widgets. A TBWidget that act as receiver for input, painting etc, and is parent to your other widgets. Turbo Badger will handle input capture, focus, etc. automatically.</p>
-<p>List of input triggers (root is your root TBWidget): </p><pre class="fragment">root-&gt;InvokePointer[Down/Up/Move] - Mouse or touch input.
+<p>You need to create at least one "root widget" for your UI widgets. A <a class="el" href="classtb_1_1_t_b_widget.html">TBWidget</a> that act as receiver for input, painting etc, and is parent to your other widgets. Turbo Badger will handle input capture, focus, etc. automatically.</p>
+<p>List of input triggers (root is your root <a class="el" href="classtb_1_1_t_b_widget.html">TBWidget</a>): </p><pre class="fragment">root-&gt;InvokePointer[Down/Up/Move] - Mouse or touch input.
 root-&gt;InvokeWheel                 - Mouse wheel input
 root-&gt;InvokeKey                   - Keyboard input
 </pre><h2><a class="anchor" id="subsec_anim"></a>
@@ -121,13 +121,13 @@ root-&gt;InvokePaint(TBWidget::PaintProps())
 g_renderer-&gt;EndPaint();
 </pre><h2><a class="anchor" id="subsec_msghandle"></a>
 Message handling</h2>
-<p>TBMessageHandler::ProcessMessages() needs to be called frequently to process the message queue.</p>
+<p><a class="el" href="classtb_1_1_t_b_message_handler.html#a721fcdf54bf06c4cdc3b788a37ba86e1">TBMessageHandler::ProcessMessages()</a> needs to be called frequently to process the message queue.</p>
 <p>If you have a game running its loop continuously, you can just call ProcessMessages() each time.</p>
-<p>If you have a event driven application that should only consume CPU when needed you can call TBMessageHandler::GetNextMessageFireTime() for scheduleing when to run ProcessMessage next. Also, TBSystem::RescheduleTimer will be called back if the time it needs to run next is changed.</p>
+<p>If you have a event driven application that should only consume CPU when needed you can call <a class="el" href="classtb_1_1_t_b_message_handler.html#a537de21659132b30876c44d5f45979fd">TBMessageHandler::GetNextMessageFireTime()</a> for scheduleing when to run ProcessMessage next. Also, <a class="el" href="classtb_1_1_t_b_system.html#a70645c32b1c953065eca4082a5ac0bc4">TBSystem::RescheduleTimer</a> will be called back if the time it needs to run next is changed.</p>
 <h1><a class="anchor" id="sec_rendering"></a>
 Rendering</h1>
 <p>There are four example render targets provided with TurboBadger: OpenGL 1.1, OpenGL 3.2, OpenGL ES1, and OpenGL ES2. You may need to modify them to fit into your own project, or they may just work. Furthermore, TB makes it easy to write and incorporate your own renderer with a clean separation of the rendering interface from the rest of the UI.</p>
-<p>TBRenderer &amp; TBBitmap are the interfaces that implements everything that Turbo Badger needs for rendering. There is already a OpenGL renderer implementation that can be used, or you can implement your own (See <a class="el" href="tb__config_8h_source.html">tb_config.h</a>).</p>
+<p><a class="el" href="classtb_1_1_t_b_renderer.html">TBRenderer</a> &amp; <a class="el" href="classtb_1_1_t_b_bitmap.html">TBBitmap</a> are the interfaces that implements everything that Turbo Badger needs for rendering. There is already a OpenGL renderer implementation that can be used, or you can implement your own (See <a class="el" href="tb__config_8h_source.html">tb_config.h</a>).</p>
 <p>Some apps need to unload all graphics and reload it again, f.ex when the app is put to sleep in the background and the graphics context is lost. Turbo Badger implements a renderer listener to handle this in all places that needs it, so the only thing you need to do is to call: </p><pre class="fragment">g_renderer-&gt;InvokeContextLost(); // Forget all bitmaps
 ...
 g_renderer-&gt;InvokeContextRestored(); // Reload all bitmaps
@@ -139,10 +139,10 @@ Font system</h2>
 <h2><a class="anchor" id="subsec_system"></a>
 System integration</h2>
 <p>Here are some additional API's that needs implementations:</p>
-<p>TBImageLoader API for loading images. There's a implementation available using STBI. Note: STBI should only be used to load your well known resources and nothing from the net, since the library doesn't handle corrupt files safely which might be a security issue.</p>
-<p>TBSystem Needs to be implemented for timers &amp; some settings.</p>
-<p>TBClipboard Needs to be implemented for clipboard support.</p>
-<p>TBFile Needs to be implemented for file loading.</p>
+<p><a class="el" href="classtb_1_1_t_b_image_loader.html">TBImageLoader</a> API for loading images. There's a implementation available using STBI. Note: STBI should only be used to load your well known resources and nothing from the net, since the library doesn't handle corrupt files safely which might be a security issue.</p>
+<p><a class="el" href="classtb_1_1_t_b_system.html">TBSystem</a> Needs to be implemented for timers &amp; some settings.</p>
+<p><a class="el" href="classtb_1_1_t_b_clipboard.html">TBClipboard</a> Needs to be implemented for clipboard support.</p>
+<p><a class="el" href="classtb_1_1_t_b_file.html">TBFile</a> Needs to be implemented for file loading.</p>
 <h1><a class="anchor" id="sec_layout"></a>
 Layout</h1>
 <h1><a class="anchor" id="sec_widgets"></a>
